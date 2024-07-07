@@ -8,7 +8,6 @@ import NavBar from '../components/NavBar';
 const HomeScreen = ({ navigation }) => {
   const [zoomAnim] = useState(new Animated.Value(1));
   const [modalVisible, setModalVisible] = useState(false);
-  const [selectedNavItem, setSelectedNavItem] = useState('Home');
 
   const handleProfileClick = () => {
     setModalVisible(true);
@@ -16,11 +15,6 @@ const HomeScreen = ({ navigation }) => {
 
   const handleModalClose = () => {
     setModalVisible(false);
-  };
-
-  const handleNavPress = (navItem) => {
-    setSelectedNavItem(navItem);
-    navigation.navigate(navItem);
   };
 
   return (
@@ -42,7 +36,7 @@ const HomeScreen = ({ navigation }) => {
           keyExtractor={(item) => item.id.toString()}
           contentContainerStyle={styles.vendorList}
         />
-        <NavBar selectedNavItem={selectedNavItem} handleNavPress={handleNavPress} />
+        <NavBar />
 
         <Modal
           animationType="fade"

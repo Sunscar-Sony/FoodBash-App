@@ -1,9 +1,18 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import styles from '../styles/Home';
 
-const NavBar = ({ selectedNavItem, handleNavPress }) => {
+const NavBar = () => {
+  const navigation = useNavigation();
+  const route = useRoute();
+  const selectedNavItem = route.name;
+
+  const handleNavPress = (navItem) => {
+    navigation.navigate(navItem);
+  };
+
   return (
     <View style={styles.navBar}>
       <TouchableOpacity onPress={() => handleNavPress('Home')}>

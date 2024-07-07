@@ -11,7 +11,7 @@ const OrderScreen = ({ route }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>
-        Today's <Text style={{ color: "" }}>Menu</Text>
+        Today's <Text style={{ color: "#fdb44b" }}>Menu</Text>
       </Text>
       <FlatList
         data={orders}

@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   card: {
-    width: '90%',
+    width: '100%',
     backgroundColor: '#fff',
     padding: 20,
     marginVertical: 10,

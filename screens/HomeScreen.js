@@ -3,10 +3,12 @@ import { View, Text, TextInput, TouchableOpacity, FlatList, Animated, SafeAreaVi
 import VendorCard from '../components/VendorCard';
 import vendorData from '../data/Vendor.json';
 import styles from '../styles/Home';
+import NavBar from '../components/NavBar';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   const [zoomAnim] = useState(new Animated.Value(1));
   const [modalVisible, setModalVisible] = useState(false);
+  const [selectedNavItem, setSelectedNavItem] = useState('Home');
 
   const handleProfileClick = () => {
     setModalVisible(true);
@@ -14,6 +16,11 @@ const HomeScreen = () => {
 
   const handleModalClose = () => {
     setModalVisible(false);
+  };
+
+  const handleNavPress = (navItem) => {
+    setSelectedNavItem(navItem);
+    navigation.navigate(navItem);
   };
 
   return (
@@ -35,12 +42,7 @@ const HomeScreen = () => {
           keyExtractor={(item) => item.id.toString()}
           contentContainerStyle={styles.vendorList}
         />
-        <View style={styles.navBar}>
-          <Text style={styles.navItem}>Home</Text>
-          <Text style={styles.navItem}>Search</Text>
-          <Text style={styles.navItem}>Cart</Text>
-          <Text style={styles.navItem}>Profile</Text>
-        </View>
+        <NavBar selectedNavItem={selectedNavItem} handleNavPress={handleNavPress} />
 
         <Modal
           animationType="fade"

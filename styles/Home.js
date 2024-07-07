@@ -45,14 +45,18 @@ const styles = StyleSheet.create({
   navBar: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    padding: 20,
+    padding: 10,
     backgroundColor: '#fff',
     borderTopWidth: 1,
     borderColor: '#ddd',
   },
   navItem: {
-    fontSize: 16,
+    textAlign: 'center',
+    fontSize: 13,
     color: '#333',
+  },
+  navIcon: {
+    alignSelf: 'center',
   },
   modalContainer: {
     flex: 1,

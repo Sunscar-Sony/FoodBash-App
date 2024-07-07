@@ -12,16 +12,18 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 5 },
     shadowRadius: 10,
     elevation: 5,
-    alignItems: 'center',
+    alignItems: 'left',
   },
   image: {
-    width: 100,
+    width: "90%",
+    alignSelf: 'center',
     height: 100,
     borderRadius: 50,
     marginBottom: 10,
   },
   title: {
-    fontSize: 18,
+    textAlign: 'left',
+    fontSize: 22,
     fontWeight: 'bold',
   },
   rating: {
@@ -30,5 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-
-  export default styles;
+export default styles;

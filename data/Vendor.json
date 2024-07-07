@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "profilePicture": "../assets/vendors/vendor-1.avif",
+    "profilePicture": "../assets/vendors/vendor1.png",
     "title": "Cafe 2004",
     "rating": 4.5
   },
   {
     "id": 2,
-    "profilePicture": "../assets/vendors/vendor-2.avif",
+    "profilePicture": "../assets/vendors/vendor2.png",
     "title": "CHE Canteen",
     "rating": 4.0
   },
   {
     "id": 3,
-    "profilePicture": "../assets/vendors/vendor-3.avif",
+    "profilePicture": "../assets/vendors/vendor3.png",
     "title": "Nescafe",
     "rating": 4.7
   },
   {
     "id": 4,
-    "profilePicture": "../assets/vendors/vendor-1.jpg",
+    "profilePicture": "../assets/vendors/vendor4.png",
     "title": "Samocha",
     "rating": 4.8
   }

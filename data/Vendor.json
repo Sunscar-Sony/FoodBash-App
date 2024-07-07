@@ -20,6 +20,12 @@
   {
     "id": 4,
     "profilePicture": "../assets/vendors/vendor4.png",
+    "title": "Brio",
+    "rating": 4.8
+  },
+  {
+    "id": 5,
+    "profilePicture": "../assets/vendors/vendor4.png",
     "title": "Samocha",
     "rating": 4.8
   }

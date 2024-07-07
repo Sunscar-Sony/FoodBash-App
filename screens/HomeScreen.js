@@ -38,7 +38,7 @@ const HomeScreen = () => {
         <View style={styles.navBar}>
           <Text style={styles.navItem}>Home</Text>
           <Text style={styles.navItem}>Search</Text>
-          <Text style={styles.navItem}>Orders</Text>
+          <Text style={styles.navItem}>Cart</Text>
           <Text style={styles.navItem}>Profile</Text>
         </View>
 

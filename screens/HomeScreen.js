@@ -1,8 +1,8 @@
-// HomeScreen.js
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList, Image, Animated, SafeAreaView } from 'react-native';
-import VendorCard from '../styles/Home';
+import { View, Text, TextInput, TouchableOpacity, FlatList, Image, Animated, SafeAreaView } from 'react-native';
+import VendorCard from '../components/VendorCard';
 import vendorData from '../data/Vendor.json';
+import styles from '../styles/Home';
 
 const HomeScreen = () => {
   const [zoomAnim] = useState(new Animated.Value(1));
@@ -27,7 +27,7 @@ const HomeScreen = () => {
         <TextInput style={styles.searchBar} placeholder="Search..." />
         <TouchableOpacity onPress={handleProfileClick}>
           <Animated.Image
-            source={{ uri: 'https://example.com/userprofile.png' }}
+            source={{ uri: '../assets/images/user.avif' }}
             style={[styles.profile, { transform: [{ scale: zoomAnim }] }]}
           />
         </TouchableOpacity>

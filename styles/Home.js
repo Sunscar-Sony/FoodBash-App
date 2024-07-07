@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
       margin: 20,
     },
     vendorList: {
+        flex:1,
       alignItems: 'center',
     },
     navBar: {

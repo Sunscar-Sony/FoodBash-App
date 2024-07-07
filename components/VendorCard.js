@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import styles from '../styles/Card';
+import vendorData from '../data/Vendor.json';
 
 const VendorCard = ({ profilePicture, title, rating }) => {
   return (

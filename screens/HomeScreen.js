@@ -27,7 +27,7 @@ const HomeScreen = () => {
         <TextInput style={styles.searchBar} placeholder="Search..." />
         <TouchableOpacity onPress={handleProfileClick}>
           <Animated.Image
-            source={{ uri: '../assets/images/user.avif' }}
+            source={require('../assets/splash.png')}
             style={[styles.profile, { transform: [{ scale: zoomAnim }] }]}
           />
         </TouchableOpacity>

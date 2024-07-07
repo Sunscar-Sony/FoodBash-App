@@ -37,12 +37,12 @@ export default function ProfileScreen() {
           </View>
           {/* Add more profile details and settings here */}
           <View style={styles.btnContainer}>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Edit Profile</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Order History</Text>
-          </TouchableOpacity>
+            <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>Edit Profile</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>Order History</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <NavBar />

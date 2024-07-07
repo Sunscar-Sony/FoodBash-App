@@ -1,18 +1,29 @@
-import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, SafeAreaView, ImageBackground } from 'react-native';
-import NavBar from '../components/NavBar';
-import styles from '../styles/Search';
+import React from "react";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+  SafeAreaView,
+  ImageBackground,
+} from "react-native";
+import NavBar from "../components/NavBar";
+import styles from "../styles/Search";
 
 const SearchScreen = () => {
   const handleSearch = () => {
     // Handle search functionality here
     // This function will be called when the search button is pressed
-    console.log('Performing search...');
+    console.log("Performing search...");
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground source={require('../assets/images/foodbash-bg.png')} style={styles.backgroundImage}>
+      <ImageBackground
+        source={require("../assets/images/foodbash-bg.png")}
+        style={styles.backgroundImage}
+      >
         <Text style={styles.heading}>Search</Text>
         <View style={styles.content}>
           <TextInput

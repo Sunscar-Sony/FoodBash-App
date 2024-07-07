@@ -4,9 +4,18 @@ import NavBar from "../components/NavBar";
 
 export default function CartScreen() {
   return (
-    <SafeAreaView style={{flex:1}}>
-      <View style={{flex:1}}>
-      <Text style={{justifyContent:'center', alignItems:'center', textAlign:'center', marginTop:100}}>Cart Screen</Text>
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={{ flex: 1 }}>
+        <Text
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            marginTop: 100,
+          }}
+        >
+          Cart Screen
+        </Text>
       </View>
       <NavBar />
     </SafeAreaView>

@@ -1,0 +1,62 @@
+{
+  "1": [
+    { "id": 1, "name": "Cheeseburger", "price": 8.99 },
+    { "id": 2, "name": "French Fries", "price": 3.49 },
+    { "id": 3, "name": "Soft Drink", "price": 1.99 },
+    { "id": 4, "name": "Caesar Salad", "price": 7.99 },
+    { "id": 5, "name": "Margherita Pizza", "price": 11.99 },
+    { "id": 6, "name": "Chicken Tenders", "price": 9.99 },
+    { "id": 7, "name": "Club Sandwich", "price": 6.99 },
+    { "id": 8, "name": "Pasta Carbonara", "price": 12.99 },
+    { "id": 9, "name": "Fish and Chips", "price": 14.99 },
+    { "id": 10, "name": "Steak Frites", "price": 19.99 }
+  ],
+  "2": [
+    { "id": 1, "name": "Sushi Combo", "price": 14.99 },
+    { "id": 2, "name": "Tempura Udon", "price": 16.99 },
+    { "id": 3, "name": "Chicken Teriyaki", "price": 12.99 },
+    { "id": 4, "name": "Ramen Bowl", "price": 10.99 },
+    { "id": 5, "name": "California Roll", "price": 8.99 },
+    { "id": 6, "name": "Salmon Sashimi", "price": 18.99 },
+    { "id": 7, "name": "Vegetable Tempura", "price": 9.99 },
+    { "id": 8, "name": "Miso Soup", "price": 3.49 },
+    { "id": 9, "name": "Gyoza", "price": 7.99 },
+    { "id": 10, "name": "Green Tea Ice Cream", "price": 4.99 }
+  ],
+  "3": [
+    { "id": 1, "name": "BBQ Ribs", "price": 18.99 },
+    { "id": 2, "name": "Grilled Chicken", "price": 15.99 },
+    { "id": 3, "name": "Pulled Pork Sandwich", "price": 12.99 },
+    { "id": 4, "name": "Beef Brisket", "price": 20.99 },
+    { "id": 5, "name": "Coleslaw", "price": 4.99 },
+    { "id": 6, "name": "Macaroni and Cheese", "price": 8.99 },
+    { "id": 7, "name": "Cornbread", "price": 3.99 },
+    { "id": 8, "name": "Baked Beans", "price": 5.99 },
+    { "id": 9, "name": "Sweet Potato Fries", "price": 6.99 },
+    { "id": 10, "name": "Chocolate Brownie", "price": 7.49 }
+  ],
+  "4": [
+    { "id": 1, "name": "Tacos Al Pastor", "price": 10.99 },
+    { "id": 2, "name": "Quesadilla", "price": 8.99 },
+    { "id": 3, "name": "Enchiladas", "price": 12.99 },
+    { "id": 4, "name": "Burrito Bowl", "price": 11.99 },
+    { "id": 5, "name": "Guacamole", "price": 5.99 },
+    { "id": 6, "name": "Churros", "price": 6.99 },
+    { "id": 7, "name": "Margarita", "price": 7.99 },
+    { "id": 8, "name": "Chile Relleno", "price": 9.99 },
+    { "id": 9, "name": "Mexican Rice", "price": 4.99 },
+    { "id": 10, "name": "Flan", "price": 5.49 }
+  ],
+  "5": [
+    { "id": 1, "name": "Pad Thai", "price": 11.99 },
+    { "id": 2, "name": "Green Curry", "price": 13.99 },
+    { "id": 3, "name": "Tom Yum Soup", "price": 9.99 },
+    { "id": 4, "name": "Spring Rolls", "price": 6.99 },
+    { "id": 5, "name": "Pineapple Fried Rice", "price": 14.99 },
+    { "id": 6, "name": "Mango Sticky Rice", "price": 7.99 },
+    { "id": 7, "name": "Beef Satay", "price": 10.99 },
+    { "id": 8, "name": "Thai Iced Tea", "price": 3.49 },
+    { "id": 9, "name": "Papaya Salad", "price": 8.99 },
+    { "id": 10, "name": "Coconut Ice Cream", "price": 4.99 }
+  ]
+}

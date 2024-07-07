@@ -14,8 +14,14 @@ export default function LoginScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-    <Image source={require('../assets/images/foodbash-bg.png')} style={styles.backgroundImage} />
-      <Image source={require("../assets/images/login-hero.png")} style={styles.heroImage} />
+      <Image
+        source={require("../assets/images/foodbash-bg.png")}
+        style={styles.backgroundImage}
+      />
+      <Image
+        source={require("../assets/images/login-hero.png")}
+        style={styles.heroImage}
+      />
       <View style={styles.formContainer}>
         <Text style={styles.heading}>{isLogin ? "Login" : "Sign Up"}</Text>
         <TextInput

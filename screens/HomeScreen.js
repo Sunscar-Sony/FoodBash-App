@@ -29,7 +29,7 @@ const HomeScreen = ({ navigation }) => {
             />
           </TouchableOpacity>
         </View>
-        <Text style={styles.mainHeading}>Vendors</Text>
+        <Text style={styles.mainHeading}>Campus <Text style={{color:"#fdb44b"}}>Cravings</Text></Text>
         <FlatList
           data={vendorData}
           renderItem={({ item }) => <VendorCard {...item} />}

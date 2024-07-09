@@ -1,21 +1,44 @@
-import React from "react";
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
-import { Ionicons } from "@expo/vector-icons";  // Make sure you have installed @expo/vector-icons
+import React, { useState } from "react";
+import { View, Text, Image, TouchableOpacity } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import styles from "../styles/CardOrder";
 
 const OrderCard = ({ item, addToCart }) => {
+  const [addedToCart, setAddedToCart] = useState(false);
+
+  const handleAddToCart = () => {
+    if (addedToCart) {
+      // Remove from cart functionality
+      setAddedToCart(false);
+    } else {
+      // Add to cart functionality
+      addToCart(item);
+      setAddedToCart(true);
+    }
+  };
+
   return (
     <View style={styles.card}>
-      <Image source={{ uri: item.image }} style={styles.image} />
+      <View style={styles.imageContainer}>
+        <Image source={{ uri: item.image }} style={styles.image} />
+      </View>
       <View style={styles.info}>
         <Text style={styles.name}>{item.name}</Text>
         <Text style={styles.subheading}>{item.subheading}</Text>
-        <Text style={styles.price}>${item.price.toFixed(2)}</Text>
-        <TouchableOpacity style={styles.addToCartButton} onPress={() => addToCart(item)}>
-          <Ionicons name="cart-outline" size={24} color="white" />
-          <Text style={styles.addToCartText}>Add to Cart</Text>
-        </TouchableOpacity>
       </View>
+      <TouchableOpacity
+        style={[
+          styles.addToCartButton,
+          addedToCart ? styles.addedToCartButton : null,
+        ]}
+        onPress={handleAddToCart}
+      >
+        {addedToCart ? (
+          <Ionicons name="checkmark" size={24} color="#000" />
+        ) : (
+          <Ionicons name="cart-outline" size={24} color="#000"/>
+        )}
+      </TouchableOpacity>
     </View>
   );
 };

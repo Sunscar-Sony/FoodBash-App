@@ -3,7 +3,7 @@ import { View, Text, FlatList, SafeAreaView, StyleSheet } from "react-native";
 import NavBar from "../components/NavBar";
 
 const CartScreen = ({ route }) => {
-  const { cart = [] } = route.params || {}; // Set default value for cart
+  const { cart = [] } = route.params || {};
 
   return (
     <SafeAreaView style={{ flex: 1 }}>

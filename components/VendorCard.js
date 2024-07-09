@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import styles from "../styles/Card";
+import styles from "../styles/CardVendor";
 
 const VendorCard = ({ id, profilePicture, title, rating }) => {
   const navigation = useNavigation();

@@ -1,9 +1,10 @@
 import React from "react";
 import { View, Text, FlatList, SafeAreaView, StyleSheet } from "react-native";
 import NavBar from "../components/NavBar";
+import styles from "../styles/Cart";
 
 const CartScreen = ({ route }) => {
-  const cart = route?.params?.cart || []; // Safely access cart with default empty array
+  const cart = route?.params?.cart || [];
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -30,40 +31,5 @@ const CartScreen = ({ route }) => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  headerText: {
-    textAlign: "center",
-    marginTop: 20,
-    fontSize: 24,
-    fontWeight: "bold"
-  },
-  cartItem: {
-    margin: 10,
-    padding: 10,
-    borderWidth: 1,
-    borderColor: "#ccc",
-    borderRadius: 8,
-    backgroundColor: "#f9f9f9"
-  },
-  itemName: {
-    fontSize: 18,
-    fontWeight: "500"
-  },
-  itemPrice: {
-    fontSize: 16,
-    color: "#888",
-    marginTop: 4
-  },
-  emptyCart: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  emptyCartText: {
-    fontSize: 18,
-    color: "#888"
-  }
-});
 
 export default CartScreen;

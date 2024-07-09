@@ -20,10 +20,12 @@ const OrderScreen = ({ route, navigation }) => {
         Today's <Text style={{ color: "#fdb44b" }}>Menu</Text>
       </Text>
       <FlatList
-        data={orders}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <OrderCard item={item} addToCart={addToCart} />}
-      />
+  data={orders}
+  keyExtractor={(item) => item.id.toString()}
+  renderItem={({ item }) => <OrderCard item={item} addToCart={addToCart} />}
+  showsVerticalScrollIndicator={false}
+/>
+
     </View>
   );
 };

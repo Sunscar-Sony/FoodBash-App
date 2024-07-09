@@ -2,16 +2,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   card: {
-    flexDirection: "row",
+    flexDirection: 'row',
     margin: 10,
     padding: 10,
+    borderWidth: 1,
+    borderColor: '#ccc',
     borderRadius: 8,
-    backgroundColor: "#fff",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 2,
+    backgroundColor: '#f9f9f9'
   },
   image: {
     width: 80,
@@ -20,20 +17,34 @@ const styles = StyleSheet.create({
   },
   info: {
     marginLeft: 10,
-    justifyContent: "space-between",
+    justifyContent: 'center',
   },
   name: {
     fontSize: 18,
-    fontWeight: "bold",
+    fontWeight: 'bold'
   },
   subheading: {
-    fontSize: 14,
-    color: "#888",
+    fontSize: 16,
+    color: '#888'
   },
   price: {
     fontSize: 16,
-    color: "#fdb44b",
+    color: '#000',
+    marginBottom: 10,
   },
+  addToCartButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#fdb44b',
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+  },
+  addToCartText: {
+    color: 'white',
+    marginLeft: 5,
+  }
 });
+
 
 export default styles;

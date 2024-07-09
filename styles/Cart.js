@@ -2,11 +2,16 @@ import { StyleSheet } from "react-native";
 
 
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center",
+  },
   headerText: {
-    textAlign: "center",
+    fontSize: 36,
+    fontWeight: 'bold',
     marginTop: 20,
-    fontSize: 24,
-    fontWeight: "bold"
+    color: '#000',
   },
   cartItem: {
     margin: 10,

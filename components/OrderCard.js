@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Image, Button, StyleSheet } from "react-native";
+import styles from "../styles/CardOrder";
 
 const OrderCard = ({ item, addToCart }) => {
   return (

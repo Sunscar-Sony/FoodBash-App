@@ -1,11 +1,23 @@
 import React from "react";
-import { View, Text, FlatList, SafeAreaView, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  SafeAreaView,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Cart";
 
 const CartScreen = ({ route }) => {
   const cart = route?.params?.cart || [];
   const totalValue = cart.reduce((sum, item) => sum + item.price, 0);
+
+  const handleOrderNow = () => {
+    // Handle order logic here
+    alert("Order Now functionality will be implemented.");
+  };
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -24,8 +36,13 @@ const CartScreen = ({ route }) => {
               )}
             />
             <View style={styles.orderNowContainer}>
-              <Text style={styles.totalValueText}>Total: ${totalValue.toFixed(2)}</Text>
-              <TouchableOpacity style={styles.orderNowButton}>
+              <Text style={styles.totalValueText}>
+                Total: ${totalValue.toFixed(2)}
+              </Text>
+              <TouchableOpacity
+                style={styles.orderNowButton}
+                onPress={handleOrderNow}
+              >
                 <Text style={styles.orderNowText}>Order Now</Text>
               </TouchableOpacity>
             </View>

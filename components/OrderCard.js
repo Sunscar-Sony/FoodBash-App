@@ -25,6 +25,7 @@ const OrderCard = ({ item, addToCart }) => {
       <View style={styles.info}>
         <Text style={styles.name}>{item.name}</Text>
         <Text style={styles.subheading}>{item.subheading}</Text>
+        <Text style={styles.price}>${item.price}</Text>
       </View>
       <TouchableOpacity
         style={[

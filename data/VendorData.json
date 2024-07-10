@@ -5,11 +5,11 @@
     { "id": 3, "name": "Soft Drink", "subheading": "Refreshing beverage", "price": 1.99, "image": "../assets/items/burger.jpg" },
     { "id": 4, "name": "Caesar Salad", "subheading": "Fresh and healthy", "price": 7.99, "image": "../assets/items/burger.jpg" },
     { "id": 5, "name": "Margherita Pizza", "subheading": "Classic Italian pizza", "price": 11.99, "image": "../assets/items/burger.jpg" },
-    { "id": 6, "name": "Chicken Tenders", "subheading": "Juicy and crispy", "price": 9.99, "image": "../assets/items/burger.jpgchickentenders.jpg" },
-    { "id": 7, "name": "Club Sandwich", "subheading": "Tasty and filling", "price": 6.99, "image": "../assets/items/burger.jpgclubsandwich.jpg" },
-    { "id": 8, "name": "Pasta Carbonara", "subheading": "Creamy and rich", "price": 12.99, "image": "../assets/items/burger.jpgpastacarbonara.jpg" },
-    { "id": 9, "name": "Fish and Chips", "subheading": "Crispy and tasty", "price": 14.99, "image": "../assets/items/burger.jpgfishandchips.jpg" },
-    { "id": 10, "name": "Steak Frites", "subheading": "Juicy steak with fries", "price": 19.99, "image": "../assets/items/burger.jpgsteakfrites.jpg" }
+    { "id": 6, "name": "Chicken Tenders", "subheading": "Juicy and crispy", "price": 9.99, "image": "../assets/items/burger.jpg"},
+    { "id": 7, "name": "Club Sandwich", "subheading": "Tasty and filling", "price": 6.99, "image": "../assets/items/burger.jpg"},
+    { "id": 8, "name": "Pasta Carbonara", "subheading": "Creamy and rich", "price": 12.99, "image": "../assets/items/burger.jpg" },
+    { "id": 9, "name": "Fish and Chips", "subheading": "Crispy and tasty", "price": 14.99, "image": "../assets/items/burger.jpg" },
+    { "id": 10, "name": "Steak Frites", "subheading": "Juicy steak with fries", "price": 19.99, "image": "../assets/items/burger.jpg" }
   ],
   "2": [
     { "id": 1, "name": "Sushi Combo", "subheading": "Fresh and flavorful", "price": 14.99, "image": "../assets/items/burger.jpgsushicombo.jpg" },

@@ -13,14 +13,14 @@ const styles = StyleSheet.create({
     width: width,
     height: height,
     resizeMode: 'cover',
-},
+  },
   overlay: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'left',
+    alignItems: 'flex-start',
+    paddingHorizontal: 20,
   },
   mainHeading: {
-    textAlign:'left',
     fontSize: 64,
     fontWeight: 'bold',
     color: '#000',

@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   mainHeading: {
-    marginLeft:20,
+    marginLeft: 20,
     fontSize: 28,
     fontWeight: "bold",
     margin: 10,
@@ -45,7 +45,15 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     alignSelf: "center",
   },
-
+  navBarContainer: {
+    position: 'fixed',
+    bottom: 0,
+    width: '100%',
+  },
+  navBarWithKeyboard: {
+    position: 'absolute',
+    bottom: 0,
+  },
   modalContainer: {
     flex: 1,
     justifyContent: "center",

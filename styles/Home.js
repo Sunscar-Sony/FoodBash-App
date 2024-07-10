@@ -46,12 +46,12 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
   navBarContainer: {
-    position: 'fixed',
+    position: 'relative',
     bottom: 0,
     width: '100%',
   },
   navBarWithKeyboard: {
-    position: 'absolute',
+    position: 'relative',
     bottom: 0,
   },
   modalContainer: {

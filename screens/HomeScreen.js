@@ -25,12 +25,18 @@ const HomeScreen = ({ navigation }) => {
   const [keyboardVisible, setKeyboardVisible] = useState(false);
 
   useEffect(() => {
-    const keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', () => {
-      setKeyboardVisible(true);
-    });
-    const keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', () => {
-      setKeyboardVisible(false);
-    });
+    const keyboardDidShowListener = Keyboard.addListener(
+      "keyboardDidShow",
+      () => {
+        setKeyboardVisible(true);
+      }
+    );
+    const keyboardDidHideListener = Keyboard.addListener(
+      "keyboardDidHide",
+      () => {
+        setKeyboardVisible(false);
+      }
+    );
 
     return () => {
       keyboardDidHideListener.remove();
@@ -86,8 +92,16 @@ const HomeScreen = ({ navigation }) => {
           renderItem={({ item }) => <VendorCard {...item} />}
           keyExtractor={(item) => item.id.toString()}
           contentContainerStyle={styles.vendorList}
+          showsVerticalScrollIndicator={false}
+          showsHorizontalScrollIndicator={false}
         />
-        <View style={[styles.navBarContainer, keyboardVisible && styles.navBarWithKeyboard]}>
+
+        <View
+          style={[
+            styles.navBarContainer,
+            keyboardVisible && styles.navBarWithKeyboard,
+          ]}
+        >
           <NavBar />
         </View>
 

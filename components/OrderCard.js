@@ -9,6 +9,7 @@ const OrderCard = ({ item, addToCart }) => {
   const handleAddToCart = () => {
     if (addedToCart) {
       // Remove from cart functionality
+      // Write you logic
       setAddedToCart(false);
     } else {
       // Add to cart functionality

@@ -1,1 +1,32 @@
-
+[
+  {
+    "id": 1,
+    "profilePicture": "vendor1.png",
+    "title": "Cafe 2004",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "profilePicture": "vendor2.png",
+    "title": "CHE Canteen",
+    "rating": 4.0
+  },
+  {
+    "id": 3,
+    "profilePicture": "vendor3.png",
+    "title": "Nescafe",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "profilePicture": "vendor4.png",
+    "title": "Brio",
+    "rating": 4.8
+  },
+  {
+    "id": 5,
+    "profilePicture": "vendor1.png",
+    "title": "Samocha",
+    "rating": 4.8
+  }
+]
